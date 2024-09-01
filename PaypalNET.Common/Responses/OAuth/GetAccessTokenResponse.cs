@@ -1,18 +1,9 @@
 using System.Text.Json.Serialization;
+using PaypalNET.Common.Models.OAuth;
 
 namespace PaypalNET.Common.Responses.OAuth
 {
-    public class GetAccessTokenResponse
-    {
-        public string Scope { get; set; } = default!;
-        [JsonPropertyName("access_token")]
-        public string AccessToken { get; set; } = default!;
-        [JsonPropertyName("token_type")]
-        public string TokenType { get; set; } = default!;
-        [JsonPropertyName("app_id")]
-        public string AppId { get; set; } = default!;
-        [JsonPropertyName("expires_in")]
-        public int ExpiresIn { get; set; }
-        public string Nonce { get; set; } = default!;
-    }
+    public record GetAccessTokenResponse
+    (string Scope, string AccessToken, string TokenType, string AppId, int ExpiresIn, string Nonce) 
+    : AccessToken(Scope, AccessToken, TokenType, AppId, ExpiresIn, Nonce), IOAuthResponse;
 }

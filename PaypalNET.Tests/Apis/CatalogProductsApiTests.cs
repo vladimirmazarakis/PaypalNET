@@ -1,21 +1,21 @@
 using PaypalNET.Common.Interfaces;
-using PaypalNET.Common.Models.CatalogProducts;
+using PaypalNET.Common.Models.CatalogsProducts;
 using PaypalNET.Common.Models.OAuth;
 using PaypalNET.Common.Options;
-using PaypalNET.Common.Requests.CatalogProducts;
-using PaypalNET.Common.Responses.CatalogProducts;
+using PaypalNET.Common.Requests.CatalogsProducts;
+using PaypalNET.Common.Responses.CatalogsProducts;
 using PaypalNET.Core.Services;
 using PaypalNET.Core.Services.Interfaces;
 
 namespace PaypalNET.Tests.Apis
 {
-    public class CatalogProductsApiTests : AuthorizedTestsBase
+    public class CatalogsProductsApiTests : AuthorizedTestsBase
     {
-        private readonly CatalogProductsPaypalService _catalogProductsService;
+        private readonly CatalogsProductsPaypalService _CatalogsProductsService;
 
-        public CatalogProductsApiTests()
+        public CatalogsProductsApiTests()
         {
-            _catalogProductsService = new CatalogProductsPaypalService(ApiOptions, AccessToken);
+            _CatalogsProductsService = new CatalogsProductsPaypalService(ApiOptions, AccessToken);
         }
 
         [Fact]
@@ -23,7 +23,7 @@ namespace PaypalNET.Tests.Apis
         {
             var newProductInfo = new CreateCatalogProductRequest("TestProduct", "", "", "DIGITAL", "", "", "");
 
-            var response = await _catalogProductsService.CreateProduct(newProductInfo);
+            var response = await _CatalogsProductsService.CreateProduct(newProductInfo);
             Assert.False(response is null);
         }
     }

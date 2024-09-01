@@ -1,0 +1,20 @@
+using PaypalNET.Common.Constants;
+using PaypalNET.Common.Requests.CatalogsProducts;
+using PaypalNET.Common.Responses.CatalogsProducts;
+using Refit;
+
+namespace PaypalNET.Common.Interfaces
+{
+    [Headers(AuthorizationHeaders.Bearer)]
+    public interface ICatalogsProductsApi
+    {
+        [Post("")]
+        Task<IApiResponse<CreateCatalogProductResponse>> CreateProduct([Body] CreateCatalogProductRequest requestBody);
+
+        [Get("")]
+        Task<IApiResponse<ListCatalogsProductsResponse>> ListProducts([Query]int page_size = 10, [Query]int page = 1, [Query]bool total_required = false);
+    
+        [Get("/{product_id}")]
+        Task<IApiResponse<CatalogProductDetailsResponse>> ProductDetails(string product_id);
+    }
+}

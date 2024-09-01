@@ -4,7 +4,7 @@ using Newtonsoft.Json.Serialization;
 
 namespace PaypalNET.Core.ContractResolvers
 {
-    public class CustomRequestContractResolver : DefaultContractResolver
+    internal class CustomContractResolver : DefaultContractResolver
     {
         protected override JsonProperty CreateProperty(MemberInfo member, MemberSerialization memberSerialization)
         {

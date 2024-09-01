@@ -1,6 +1,6 @@
-using PaypalNET.Common.Models.CatalogProducts;
+using PaypalNET.Common.Models.CatalogsProducts;
 
-namespace PaypalNET.Common.Requests.CatalogProducts
+namespace PaypalNET.Common.Requests.CatalogsProducts
 {
     public record CreateCatalogProductRequest
     (string Name, string Id, string Description, string Type, string Category, string ImageUrl, string HomeUrl) 

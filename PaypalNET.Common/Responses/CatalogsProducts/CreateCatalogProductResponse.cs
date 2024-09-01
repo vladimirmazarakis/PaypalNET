@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
 using PaypalNET.Common.Models;
-using PaypalNET.Common.Models.CatalogProducts;
+using PaypalNET.Common.Models.CatalogsProducts;
 
-namespace PaypalNET.Common.Responses.CatalogProducts
+namespace PaypalNET.Common.Responses.CatalogsProducts
 {
     public record CreateCatalogProductResponse
     (string Name, string Id, string Description, string Type, string Category, string ImageUrl
@@ -10,5 +10,5 @@ namespace PaypalNET.Common.Responses.CatalogProducts
     : 
     UrlInfoCatalogProduct
     (Name, Id, Description, Type, Category, ImageUrl, HomeUrl)
-    , ILinkedCreatedUpdatedTimeCatalogProduct;
+    , ILinkedCreatedUpdatedTimeCatalogProduct, ICatalogProductResponse;
 }

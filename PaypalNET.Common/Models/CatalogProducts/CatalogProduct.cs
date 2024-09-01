@@ -2,7 +2,7 @@ using System.Runtime.ConstrainedExecution;
 using System.Text.Json.Serialization;
 using Newtonsoft.Json.Converters;
 
-namespace PaypalNET.Common.Models.CatalogProducts
+namespace PaypalNET.Common.Models.CatalogsProducts
 {
     public record BaseCatalogProduct(string Name, string Id, string Description);
     public record BaseTypedCatalogProduct(string Name, string Id, string Description, string Type, string Category) : BaseCatalogProduct(Name, Id, Description);
