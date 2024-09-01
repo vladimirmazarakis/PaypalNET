@@ -2,6 +2,7 @@ using System.Net;
 using System.Runtime.Intrinsics.Arm;
 using Newtonsoft.Json;
 using PaypalNET.Common.Exceptions;
+using PaypalNET.Common.Exceptions.Auth;
 using PaypalNET.Common.Responses.Error;
 using Refit;
 
@@ -43,7 +44,7 @@ namespace PaypalNET.Core.Utilities
                 case HttpStatusCode.Unauthorized:
                 case HttpStatusCode.Forbidden:
                     IdentityErrorResponse? identityError = errorResponse as IdentityErrorResponse;
-                    return new PaypalServiceException
+                    return new IdentityPaypalServiceException
                     ("Authentication failed, check your credentials."
                     , statusCode
                     , identityError?.Error

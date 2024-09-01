@@ -6,6 +6,7 @@ using PaypalNET.Common.Options;
 using PaypalNET.Common.Requests.OAuth;
 using PaypalNET.Common.Responses.OAuth;
 using PaypalNET.Core.Services.Abstractions;
+using PaypalNET.Core.Utilities;
 using Refit;
 
 namespace PaypalNET.Core.Services
@@ -18,7 +19,10 @@ namespace PaypalNET.Core.Services
         {
             var mode = paypalApiOptions.Mode;
             string baseAddress = (mode == Common.Enums.PaypalApiMode.Sandbox ? PaypalApiLinks.Sandbox : "") + Address;
-            _authApi = RestService.For<IOAuthApi>(baseAddress);
+            _authApi = RestService.For<IOAuthApi>(baseAddress, new RefitSettings()
+            {
+                ContentSerializer = new NewtonsoftJsonContentSerializer(JsonSerializerSettingsServer.GetSettings())
+            });
         }
 
         public override string Address => "v1/oauth2";

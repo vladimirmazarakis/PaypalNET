@@ -9,7 +9,7 @@ namespace PaypalNET.Tests
 
         public AuthorizedTestsBase()
         {
-            AccessToken = new AuthPaypalService(ApiOptions).GetAccessToken(Config.Paypal.ClientId, Config.Paypal.ClientSecret).Result;
+            AccessToken = (AccessToken)new AuthPaypalService(ApiOptions).GetAccessToken(Config.Paypal.ClientId, Config.Paypal.ClientSecret).Result;
         }
     }
 }
