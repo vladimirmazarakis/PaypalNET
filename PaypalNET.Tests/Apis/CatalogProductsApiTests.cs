@@ -7,7 +7,7 @@ using PaypalNET.Common.Responses.CatalogProducts;
 using PaypalNET.Core.Services;
 using PaypalNET.Core.Services.Interfaces;
 
-namespace PaypalNET.Tests
+namespace PaypalNET.Tests.Apis
 {
     public class CatalogProductsApiTests : AuthorizedTestsBase
     {
