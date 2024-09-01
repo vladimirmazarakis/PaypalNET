@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "/dmxu2rz8u3UId6oltB8D1ChKpQLw7kJgu/fwOxzIqJAqczj5S+HfoZnzyFjzq4JIGQukHsBBqS2eC9yPon2+w==",
+  "success": true,
+  "projectFilePath": "/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/PaypalNET.Core.csproj",
+  "expectedPackageFiles": [
+    "/home/vladimirmazarakis/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/home/vladimirmazarakis/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/home/vladimirmazarakis/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/vladimirmazarakis/.nuget/packages/refit/7.1.2/refit.7.1.2.nupkg.sha512",
+    "/home/vladimirmazarakis/.nuget/packages/refit.newtonsoft.json/7.1.2/refit.newtonsoft.json.7.1.2.nupkg.sha512",
+    "/home/vladimirmazarakis/.nuget/packages/system.net.http.json/8.0.0/system.net.http.json.8.0.0.nupkg.sha512",
+    "/home/vladimirmazarakis/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/home/vladimirmazarakis/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

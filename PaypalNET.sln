@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaypalNET.Common", "PaypalNET.Common\PaypalNET.Common.csproj", "{ACC84FF7-D18C-46A7-852D-FB5C7273007D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaypalNET.Core", "PaypalNET.Core\PaypalNET.Core.csproj", "{87ED6A8D-2EC2-464F-B042-728B4C14A4FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaypalNET.Tests", "PaypalNET.Tests\PaypalNET.Tests.csproj", "{34E523D6-7CEE-4071-BC7F-C8E309A1B6F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACC84FF7-D18C-46A7-852D-FB5C7273007D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACC84FF7-D18C-46A7-852D-FB5C7273007D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACC84FF7-D18C-46A7-852D-FB5C7273007D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACC84FF7-D18C-46A7-852D-FB5C7273007D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87ED6A8D-2EC2-464F-B042-728B4C14A4FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87ED6A8D-2EC2-464F-B042-728B4C14A4FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87ED6A8D-2EC2-464F-B042-728B4C14A4FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87ED6A8D-2EC2-464F-B042-728B4C14A4FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34E523D6-7CEE-4071-BC7F-C8E309A1B6F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E523D6-7CEE-4071-BC7F-C8E309A1B6F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E523D6-7CEE-4071-BC7F-C8E309A1B6F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E523D6-7CEE-4071-BC7F-C8E309A1B6F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E6AB671-D531-4AFE-BFB4-57FB17CFC5E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E6AB671-D531-4AFE-BFB4-57FB17CFC5E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E6AB671-D531-4AFE-BFB4-57FB17CFC5E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E6AB671-D531-4AFE-BFB4-57FB17CFC5E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

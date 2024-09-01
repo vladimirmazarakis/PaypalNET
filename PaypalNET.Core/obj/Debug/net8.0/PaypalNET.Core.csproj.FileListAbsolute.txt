@@ -1,0 +1,15 @@
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/bin/Debug/net8.0/PaypalNET.Core.deps.json
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/bin/Debug/net8.0/PaypalNET.Core.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/bin/Debug/net8.0/PaypalNET.Core.pdb
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/bin/Debug/net8.0/PaypalNET.Common.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/bin/Debug/net8.0/PaypalNET.Common.pdb
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/PaypalNET.Core.csproj.AssemblyReference.cache
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/PaypalNET.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/PaypalNET.Core.AssemblyInfoInputs.cache
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/PaypalNET.Core.AssemblyInfo.cs
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/PaypalNET.Core.csproj.CoreCompileInputs.cache
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/PaypalNET.Core.csproj.CopyComplete
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/PaypalNET.Core.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/refint/PaypalNET.Core.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/PaypalNET.Core.pdb
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/ref/PaypalNET.Core.dll
