@@ -10,3 +10,4 @@
 /home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Common/obj/Debug/net8.0/PaypalNET.Common.pdb
 /home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Common/obj/Debug/net8.0/ref/PaypalNET.Common.dll
 /home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Common/obj/Debug/net8.0/PaypalNET.Common.csproj.AssemblyReference.cache
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Common/obj/Debug/net8.0/PaypalNET.Common.sourcelink.json

@@ -13,3 +13,4 @@
 /home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/refint/PaypalNET.Core.dll
 /home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/PaypalNET.Core.pdb
 /home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/ref/PaypalNET.Core.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Core/obj/Debug/net8.0/PaypalNET.Core.sourcelink.json

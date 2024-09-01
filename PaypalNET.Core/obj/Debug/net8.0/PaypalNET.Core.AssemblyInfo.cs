@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PaypalNET.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e200040a7821a8c7ef8a1d806e9f7e38152c32d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("PaypalNET.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PaypalNET.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

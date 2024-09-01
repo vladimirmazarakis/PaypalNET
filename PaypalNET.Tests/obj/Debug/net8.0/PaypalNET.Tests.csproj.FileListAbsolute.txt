@@ -105,3 +105,17 @@
 /home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Refit.dll
 /home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Refit.Newtonsoft.Json.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/appsettings.json
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/appsettings.local.json
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Microsoft.Extensions.Configuration.FileExtensions.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Json.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Microsoft.Extensions.Configuration.UserSecrets.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Physical.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Microsoft.Extensions.FileSystemGlobbing.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/home/vladimirmazarakis/dotnet/PaypalNET/PaypalNET.Tests/obj/Debug/net8.0/PaypalNET.Tests.sourcelink.json

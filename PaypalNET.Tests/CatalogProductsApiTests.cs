@@ -9,32 +9,22 @@ using PaypalNET.Core.Services.Interfaces;
 
 namespace PaypalNET.Tests
 {
-    public class CatalogProductsApiTests
+    public class CatalogProductsApiTests : AuthorizedTestsBase
     {
-        private readonly PaypalApiOptions _sandboxApiOptions;
-        private readonly AccessToken _accessToken;
+        private readonly CatalogProductsPaypalService _catalogProductsService;
 
         public CatalogProductsApiTests()
         {
-            _sandboxApiOptions = new PaypalApiOptions()
-            {
-                Mode = Common.Enums.PaypalApiMode.Sandbox
-            };
-
-            AuthPaypalService authPaypalService = new AuthPaypalService(_sandboxApiOptions);
-            _accessToken = authPaypalService.GetAccessToken("CLIENT ID", "CLIENT SECRET").Result;
+            _catalogProductsService = new CatalogProductsPaypalService(ApiOptions, AccessToken);
         }
 
         [Fact]
         public async Task Create_Product_Test()
         {
-            CatalogProductsPaypalService catalogProductService 
-            = new CatalogProductsPaypalService(_sandboxApiOptions, _accessToken);
-            
             var newProductInfo = new CreateCatalogProductRequest("TestProduct", "", "", "DIGITAL", "", "", "");
 
-            var response = await catalogProductService.CreateProduct(newProductInfo);
-            Assert.True(response is null);
+            var response = await _catalogProductsService.CreateProduct(newProductInfo);
+            Assert.False(response is null);
         }
     }
 }
