@@ -5,6 +5,9 @@ using Refit;
 
 namespace PaypalNET.Common.Interfaces
 {
+    /// <summary>
+    /// Catalogs Products Api, more info: https://developer.paypal.com/docs/api/catalog-products/v1/
+    /// </summary>
     [Headers(AuthorizationHeaders.Bearer)]
     public interface ICatalogsProductsApi
     {

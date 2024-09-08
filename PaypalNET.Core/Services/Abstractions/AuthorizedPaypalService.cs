@@ -13,10 +13,18 @@ using Refit;
 
 namespace PaypalNET.Core.Services
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="T">Service type, used to instantiate service object.</typeparam>
+    /// <typeparam name="G">Type of response.</typeparam>
     public abstract class AuthorizedPaypalService<T, G> : BasePaypalService<G>
     {
         protected T Service { get; set; }
         public override abstract string Address { get; }
+        /// <summary>
+        /// Access token, to use in requests.
+        /// </summary>
         protected AccessToken AccessToken { get; set; }
 
         public AuthorizedPaypalService(PaypalApiOptions paypalApiOptions, AccessToken accessToken)

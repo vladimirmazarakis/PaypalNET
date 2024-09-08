@@ -3,6 +3,9 @@ using System.Runtime.Serialization;
 
 namespace PaypalNET.Common.Exceptions
 {
+    /// <summary>
+    /// Basic Paypal Service Exception.
+    /// </summary>
     public class PaypalServiceException : Exception
     {
         public HttpStatusCode StatusCode { get; init; }

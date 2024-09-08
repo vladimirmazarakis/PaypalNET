@@ -8,6 +8,9 @@ using Refit;
 
 namespace PaypalNET.Core.Utilities
 {
+    /// <summary>
+    /// Handles errors for Paypal Services. Needs tweaking.
+    /// </summary>
     internal static class PaypalErrorHandler
     {
         private static JsonSerializerSettings _settings = JsonSerializerSettingsServer.GetSettings(); 

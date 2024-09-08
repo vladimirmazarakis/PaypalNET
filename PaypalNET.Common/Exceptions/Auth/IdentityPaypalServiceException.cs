@@ -2,6 +2,9 @@ using System.Net;
 
 namespace PaypalNET.Common.Exceptions.Auth
 {
+    /// <summary>
+    /// Auth Paypal Service Exception, in case of failed authentication/authorization on Paypal.
+    /// </summary>
     public class IdentityPaypalServiceException : PaypalServiceException
     {
         public IdentityPaypalServiceException()
