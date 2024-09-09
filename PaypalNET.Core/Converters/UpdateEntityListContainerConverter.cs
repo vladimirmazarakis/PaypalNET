@@ -7,18 +7,18 @@ using PaypalNET.Common.Requests;
 namespace PaypalNET.Core.Converters
 {
     /// <summary>
-    /// <see cref="IUpdateEntityRequestArray"/> conversion handler.
+    /// <see cref="IUpdateEntityListContainer"/> conversion handler.
     /// </summary>
-    public class UpdateEntityRequestArrayConverter : JsonConverter<IUpdateEntityRequestArray>
+    public class UpdateEntityListContainerConverter : JsonConverter<IUpdateEntityListContainer>
     {
-        public override IUpdateEntityRequestArray? ReadJson(JsonReader reader, Type objectType, IUpdateEntityRequestArray? existingValue, bool hasExistingValue, JsonSerializer serializer)
+        public override IUpdateEntityListContainer? ReadJson(JsonReader reader, Type objectType, IUpdateEntityListContainer? existingValue, bool hasExistingValue, JsonSerializer serializer)
         {
             if(reader.TokenType != JsonToken.StartArray)
             {
                 throw new JsonSerializationException($"Unexpected token type: {reader.TokenType}. Expected StartArray.");
             }
 
-            var arrayItems = new List<UpdateEntityRequest>();
+            var arrayItems = new List<UpdateEntity>();
 
             while(reader.Read())
             {
@@ -26,7 +26,7 @@ namespace PaypalNET.Core.Converters
                 {
                     break;
                 }
-                var item = serializer.Deserialize<UpdateEntityRequest>(reader);
+                var item = serializer.Deserialize<UpdateEntity>(reader);
                 if(item is null)
                 {
                     continue;
@@ -34,18 +34,18 @@ namespace PaypalNET.Core.Converters
                 arrayItems.Add(item);
             }
 
-            return new UpdateEntityRequestArray(arrayItems);
+            return new UpdateEntityListContainer(arrayItems);
         }
 
-        public override void WriteJson(JsonWriter writer, IUpdateEntityRequestArray? value, JsonSerializer serializer)
+        public override void WriteJson(JsonWriter writer, IUpdateEntityListContainer? value, JsonSerializer serializer)
         {
             writer.WriteStartArray();
-            if(value is null || value.Array is null || value.Array.Count <= 0)
+            if(value is null || value.List is null || value.List.Count <= 0)
             {
                 writer.WriteEndArray();
                 return;
             }
-            foreach(var ueRequest in value.Array)
+            foreach(var ueRequest in value.List)
             {
                 serializer.Serialize(writer, ueRequest);
             }
