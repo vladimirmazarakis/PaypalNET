@@ -41,6 +41,12 @@ namespace PaypalNET.Core.Services
             return CheckResponseContentAndReturn(response);
         }
 
+        public async Task UpdateProduct(string productId, UpdateCatalogProductRequest request)
+        {
+            var response = await Service.UpdateProduct(productId, request);
+            CheckResponseContent(response);
+        }
+
         public override string Address => "v1/catalogs/products";        
     }
 }

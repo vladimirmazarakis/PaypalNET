@@ -25,5 +25,17 @@ namespace PaypalNET.Core.Services.Abstractions
                 throw PaypalErrorHandler.HandleApiException(apiResponse.Error);
             }
         }
+
+        public void CheckResponseContent(IApiResponse apiResponse)
+        {
+            if(apiResponse.IsSuccessStatusCode)
+            {
+                return;
+            }
+            else
+            {
+                throw PaypalErrorHandler.HandleApiException(apiResponse.Error);
+            }
+        }
     }
 }
