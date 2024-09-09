@@ -24,7 +24,8 @@ namespace PaypalNET.Core.Utilities
                     Formatting = Formatting.Indented,
                     Converters = 
                     [
-                        new UpdateOperationConverter()
+                        new UpdateOperationConverter(),
+                        new UpdateEntityListContainerConverter()
                     ]
             };
             return settings;
