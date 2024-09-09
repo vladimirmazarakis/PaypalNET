@@ -19,5 +19,8 @@ namespace PaypalNET.Common.Interfaces
     
         [Get("/{product_id}")]
         Task<IApiResponse<CatalogProductDetailsResponse>> ProductDetails(string product_id);
+
+        [Patch("/{product_id}")]
+        Task<IApiResponse> UpdateProduct(string product_id, [Body] UpdateCatalogProductRequest requestBody);
     }
 }
